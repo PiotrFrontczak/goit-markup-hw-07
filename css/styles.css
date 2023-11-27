@@ -29,8 +29,8 @@ a:link {
 }
 
 button {
-    color: var(--color-white);
-    background-color: var(--iris);
+    color: #4d5ae5;
+    background-color: #F4F4FD;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -44,8 +44,13 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active,
+a:hover {
+    color: #404BBF;
+}
+
 button:hover {
-    background-color: #404BBF, ;
+    background-color: #9747ff, ;
 }
 
 .logo {
