@@ -50,8 +50,11 @@ a:focus {
     color: #404BBF;
 }
 
-button:hover {
-    background-color: #9747ff, ;
+button:hover,
+button:active,
+button:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
 }
 
 .logo {
