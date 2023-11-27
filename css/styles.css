@@ -57,7 +57,7 @@ button:hover {
 .logo {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
-    text-decoration: none;
+
     text-transform: uppercase;
     color: #4d5ae5;
     font-weight: 800;
@@ -78,10 +78,7 @@ button:hover {
 }
 
 .link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    text-decoration: none;
 
 }
 
@@ -115,5 +112,8 @@ button:hover {
 
 .address {
     font-style: normal;
+}
 
+.studio-header {
+    color: #2e2f42;
 }
