@@ -185,8 +185,3 @@ button:focus {
 .team-list {
     background-color: var(--color-white);
 }
-
-.header-intro,
-.header-portfolio {
-    display: none;
-}
