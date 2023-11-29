@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: var(--color-white);
+    color: var(--third-color-text);
 }
 
 
@@ -26,7 +27,7 @@ body {
     color: var(--iris);
 }
 
-.button {
+button {
     color: var(--iris);
     background-color: var(--fifth-color-text);
     cursor: pointer;
