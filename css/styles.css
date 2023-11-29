@@ -1,20 +1,22 @@
 :root {
     --first-color-text: #000;
     --second-color-text: #4285f4;
+    --third-color-text: #434455;
+    --fourth-color-text: #2e2f42;
+    --fifth-color-text: #f4f4fd;
     --color-white: #ffffff;
     --iris: #4D5AE5;
+    --focus-color: #404bbf;
 }
-
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
     line-height: 1.6;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
 }
 
 
-header {
+.header {
     background-color: var(--color-white);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -24,13 +26,9 @@ header {
     color: var(--iris);
 }
 
-a:link {
-    text-decoration: none;
-}
-
-button {
+.button {
     color: var(--iris);
-    background-color: #F4F4FD;
+    background-color: var(--fifth-color-text);
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -40,21 +38,17 @@ button {
 
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 a:active,
 a:hover,
 a:focus {
-    color: #404BBF;
+    color: var(--focus-color);
 }
 
 button:hover,
 button:active,
 button:focus {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--color-white);
+    background-color: var(--focus-color)
 }
 
 .logo {
@@ -68,7 +62,7 @@ button:focus {
 }
 
 .studio-highlight {
-    color: #f4f4fd;
+    color: var(--fifth-color-text);
 }
 
 .list {
@@ -85,7 +79,7 @@ button:focus {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .header-list {
@@ -93,35 +87,38 @@ button:focus {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .text-list {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--third-color-text);
     font-size: 16px;
 }
 
 .page-footer {
-    background-color: #2e2f42;
-    color: #FFFFFF;
+    background-color: var(--fourth-color-text);
+    color: var(--color-white);
 }
 
 .address {
     font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .studio-header {
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .index-link {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .contact-link,
@@ -129,17 +126,17 @@ button:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--third-color-text);
 }
 
 .footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: var(--fifth-color-text);
 }
 
 .section {
-    background-color: #2e2f42;
+    background-color: var(--fourth-color-text);
 }
 
 .header-section {
@@ -147,12 +144,12 @@ button:focus {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .button-header {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+    background-color: var(--iris);
+    color: var(--color-white);
 }
 
 .header-list {
@@ -160,7 +157,7 @@ button:focus {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .h-text {
@@ -168,11 +165,11 @@ button:focus {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--fifth-color-text);
 }
 
 .team-text {
@@ -181,9 +178,14 @@ button:focus {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: var(--fourth-color-text);
 }
 
 .team-list {
     background-color: var(--color-white);
+}
+
+.header-intro,
+.header-portfolio {
+    display: none;
 }
