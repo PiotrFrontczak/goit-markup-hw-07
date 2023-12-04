@@ -18,6 +18,10 @@
     --focus-color: #404bbf;
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -36,8 +40,15 @@ body {
     display: flex;
     height: 72px;
     align-items: center;
-
     border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+    min-width: 1158px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 15px;
+
 }
 
 button {
@@ -101,7 +112,7 @@ button:focus {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     display: flex;
-    justify-content: end;
+    margin-left: auto;
 
 }
 
@@ -286,7 +297,16 @@ button:focus {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .tasks {
@@ -309,13 +329,7 @@ button:focus {
     justify-content: center;
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    display: flex;
-    padding: 0 15px;
-    justify-content: space-between;
-}
+
 
 .feature {
     height: 104px;
