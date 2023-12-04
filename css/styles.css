@@ -25,7 +25,6 @@ body {
     color: var(--third-color-text);
 }
 
-
 .header {
     background-color: var(--color-white);
     font-family: 'Raleway', sans-serif;
@@ -35,10 +34,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--iris);
     display: flex;
-    justify-content: space-between;
-    margin: 30px 60px;
     height: 72px;
     align-items: center;
+
+    border-bottom: 1px solid #e7e9fc;
 }
 
 button {
@@ -73,6 +72,9 @@ button:focus {
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
 }
 
 .studio-highlight {
@@ -82,18 +84,24 @@ button:focus {
 .list {
     list-style: none;
     display: flex;
+
     margin: 0 auto;
     justify-content: center;
-    display: flex;
     gap: 20px;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    margin: 0 100px;
-    justify-content: space-between;
-    gap: 50px;
+    align-items: center;
+}
+
+.address {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: end;
 
 }
 
@@ -102,8 +110,8 @@ button:focus {
     display: flex;
     margin: 0 10px;
     justify-content: center;
-    gap: 50px;
-
+    gap: 40px;
+    align-items: center;
 }
 
 .link {
@@ -151,14 +159,7 @@ button:focus {
     padding: 18px 0 0 0;
 }
 
-.address {
-    font-style: normal;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    display: flex;
-    margin-left: auto;
-    padding: 50px;
-}
+
 
 .studio-header {
     color: var(--fourth-color-text);
@@ -172,6 +173,8 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--fourth-color-text);
     gap: 40px;
+    display: flex;
+    padding: 24px 0;
 }
 
 .contact-link,
@@ -307,8 +310,11 @@ button:focus {
 }
 
 .container {
-    min-width: 1158px;
+    width: 1158px;
     margin: 0 auto;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
 .feature {
@@ -328,10 +334,9 @@ button:focus {
     flex-direction: column;
     margin: 0 auto;
     padding-top: 30px;
-
 }
 
 .task-img {
     border: 1px solid #E7E9FC;
-
+    display: block;
 }
