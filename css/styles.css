@@ -263,8 +263,6 @@ button:focus {
     max-width: 496px;
 }
 
-
-
 .header-list {
     font-weight: 500;
     font-size: 20px;
@@ -272,7 +270,6 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--fourth-color-text);
     height: 24px;
-
 }
 
 .h-text {
@@ -292,7 +289,6 @@ button:focus {
     list-style: none;
     gap: 36px;
     margin-top: 30px;
-
 }
 
 .team {
@@ -357,8 +353,6 @@ button:focus {
     justify-content: center;
 }
 
-
-
 .feature {
     height: 104px;
     width: 264px;
@@ -367,7 +361,6 @@ button:focus {
     flex-direction: column;
     margin-left: 10px;
     margin-top: 100px;
-
 }
 
 .member-names {
