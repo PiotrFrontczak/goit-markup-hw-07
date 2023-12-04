@@ -43,12 +43,23 @@ body {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
-    min-width: 1158px;
+.container-default {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-header {
+    width: 1158px;
     margin: 0 auto;
     display: flex;
     padding: 0 15px;
+}
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 button {
@@ -60,6 +71,19 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+
+.button-header {
+    background-color: var(--iris);
+    color: var(--color-white);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: block;
+    border: none;
 }
 
 a:active,
@@ -105,6 +129,7 @@ button:focus {
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 .address {
@@ -170,8 +195,6 @@ button:focus {
     padding: 18px 0 0 0;
 }
 
-
-
 .studio-header {
     color: var(--fourth-color-text);
 }
@@ -204,6 +227,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 188px 0;
 }
 
 .second-section {
@@ -222,20 +246,10 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--color-white);
     display: flex;
-    padding-top: 200px;
+    max-width: 496px;
 }
 
-.button-header {
-    background-color: var(--iris);
-    color: var(--color-white);
-    padding: 16px 32px;
-    gap: 10px;
-    width: 180px;
-    height: 56px;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    border-radius: 4px;
-    margin-top: 50px;
-}
+
 
 .header-list {
     font-weight: 500;
