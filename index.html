@@ -10,111 +10,125 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <header>
-        <nav class="list">
-            <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span></a>
-            <ul class="list">
-                <li><a href="./index.html" class="link index-link">Studio</a></li>
-                <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
-                <li><a href="" class="link index-link">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="address">
-            <ul class="list">
-                <li><a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="link contact-link">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-    </header>
-    <main>
-        <section class="section">
-            <h1 class="header-section">Effective Solutions for Your Business</h1>
-            <button type="button" class="button-header">Order Service</button>
-        </section>
-        <section>
-            <h2 class="header-intro">introduction</h2>
-            <ul class="list">
-                <li>
-                    <h3 class="header-list">Strategy</h3>
-                    <p class="header-text">
-                        Our goal is to identify the business problem to walk away with the
-                        perfect and creative solution.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="header-list">Punctuality</h3>
-                    <p class="header-text">
-                        Bring the key message to the brand's audience for the best price
-                        within the shortest possible time.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="header-list">Diligence</h3>
-                    <p class="header-text">
-                        Research and confirm brands that present the strongest digital
-                        growth opportunities and minimize risk.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="header-list">Technologies</h3>
-                    <p class="header-text">
-                        Design practice focused on digital experiences. We bring forth a
-                        deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2 class="h-text">What are we doing</h2>
-            <ul class="list">
-                <li>
-                    <img src="./images/img_1.jpg" alt="monitor" width="360" height="300">
-                </li>
-                <li>
-                    <img src="./images/img_2.jpg" alt="mobile_phone" width="360" height="300">
-                </li>
-                <li>
-                    <img src="./images/img_3.jpg" alt="mobile_phone_with_notebook" width="360" height="300">
-                </li>
-            </ul>
-        </section>
-        <section class="team">
-            <h2 class="team-text">Our Team</h2>
-            <ul class="list">
-                <li class="team-list">
-                    <img src="./images/img_Mark.jpg" alt="img_Mark" width="264" height="260">
-                    <h3 class="header-list">Mark Guerrero</h3>
-                    <p class="header-text">Product Designer</p>
-                </li>
-                <li class="team-list">
-                    <img src="./images/img_Tom.jpg" alt="img_Tom" width="264" height="260">
-                    <h3 class="header-list">Tom Ford</h3>
-                    <p class="header-text">Frontend Developer</p>
-                </li>
-                <li class="team-list">
-                    <img src="./images/img_Camila.jpg" alt="img_Camila" width="264" height="260">
-                    <h3 class="header-list">Camila Garcia</h3>
-                    <p class="header-text">Marketing</p>
-                </li>
-                <li class="team-list">
-                    <img src="./images/img_Daniel.jpg" alt="img_Daniel" width="264" height="260">
-                    <h3 class="header-list">Daniel Wilson</h3>
-                    <p class="header-text">UI Designer</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <a class="logo link" href="./index.html">Web<span class="studio-highlight">Studio</span>
-        </a>
-        <p class="footer">
-            Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-        </p>
-    </footer>
+    <div class="container">
+        <header class="header">
+            <nav class="nav-list">
+                <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span></a>
+                <ul class="list">
+                    <li><a href="./index.html" class="link index-link">Studio</a></li>
+                    <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
+                    <li><a href="" class="link index-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address">
+                <ul class="address-list">
+                    <li><a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="link contact-link">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </header>
+        <main>
+            <section class="first-section">
+                <h1 class="header-section">Effective Solutions <br>for Your Business</h1>
+                <button type="button" class="button-header">Order Service</button>
+            </section>
+            <section class="second-section">
+                <h2 class="visually-hidden">introduction</h2>
+                <ul class="list">
+                    <li class="feature">
+                        <h3 class="header-list">Strategy</h3>
+                        <p class="header-text">
+                            Our goal is to identify the business problem to walk away with the
+                            perfect and creative solution.
+                        </p>
+                    </li>
+                    <li class="feature">
+                        <h3 class="header-list">Punctuality</h3>
+                        <p class="header-text">
+                            Bring the key message to the brand's audience for the best price
+                            within the shortest possible time.
+                        </p>
+                    </li>
+                    <li class="feature">
+                        <h3 class="header-list">Diligence</h3>
+                        <p class="header-text">
+                            Research and confirm brands that present the strongest digital
+                            growth opportunities and minimize risk.
+                        </p>
+                    </li>
+                    <li class="feature">
+                        <h3 class="header-list">Technologies</h3>
+                        <p class="header-text">
+                            Design practice focused on digital experiences. We bring forth a
+                            deep passion for problem-solving.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="tasks">
+                <h2 class="h-text">What are we doing</h2>
+                <ul class="task-list">
+                    <li class="task-img">
+                        <img src="./images/img_1.jpg" alt="monitor" width="360" height="300">
+                    </li>
+                    <li class="task-img">
+                        <img src="./images/img_2.jpg" alt="mobile_phone" width="360" height="300">
+                    </li>
+                    <li class="task-img">
+                        <img src="./images/img_3.jpg" alt="mobile_phone_with_notebook" width="360" height="300">
+                    </li>
+                </ul>
+            </section>
+            <section class="team">
+                <h2 class="team-text">Our Team</h2>
+                <ul class="team-list">
+                    <li class="team-member">
+                        <img src="./images/img_Mark.jpg" alt="img_Mark" width="264" height="260">
+                        <div class="member-names">
+                            <h3 class="header-list">Mark Guerrero</h3>
+                            <p class="header-text">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img src="./images/img_Tom.jpg" alt="img_Tom" width="264" height="260">
+                        <div class="member-names">
+                            <h3 class="header-list">Tom Ford</h3>
+                            <p class="header-text">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img src="./images/img_Camila.jpg" alt="img_Camila" width="264" height="260">
+                        <div class="member-names">
+                            <h3 class="header-list">Camila Garcia</h3>
+                            <p class="header-text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img src="./images/img_Daniel.jpg" alt="img_Daniel" width="264" height="260">
+                        <div class="member-names">
+                            <h3 class="header-list">Daniel Wilson</h3>
+                            <p class="header-text">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <a class="logo link" href="./index.html">Web<span class="studio-highlight">Studio</span>
+            </a>
+            <p class="footer">
+                Increase the flow of customers and <br>sales for your business with digital <br>marketing & growth
+                solutions.
+            </p>
+        </footer>
+    </div>
+
 </body>
 
 </html>
