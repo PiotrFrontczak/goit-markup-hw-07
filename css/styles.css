@@ -125,11 +125,18 @@ button:focus {
     gap: 20px;
 }
 
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .address {
