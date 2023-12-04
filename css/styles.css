@@ -161,6 +161,12 @@ button:focus {
     text-decoration: none;
 }
 
+.footer-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .section-button {
     font-size: 56px;
     line-height: 1.07;
@@ -189,7 +195,7 @@ button:focus {
     background-color: var(--fourth-color-text);
     color: var(--color-white);
     height: 312px;
-    padding-left: 150px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,6 +206,7 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--fifth-color-text);
     padding: 18px 0 0 0;
+    max-width: 264px;
 }
 
 .studio-header {
