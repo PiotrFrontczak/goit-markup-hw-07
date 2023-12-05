@@ -352,11 +352,11 @@ button:focus {
 
 .task-list {
     height: 300px;
-    gap: 26px;
     list-style: none;
     display: flex;
     margin: 0 10px;
     justify-content: center;
+    gap: 24px;
 }
 
 .feature {
