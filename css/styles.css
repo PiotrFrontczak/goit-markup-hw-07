@@ -265,7 +265,7 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--color-white);
     display: flex;
-    min-width: 496px;
+    max-width: 496px;
     justify-content: center;
 }
 
@@ -357,7 +357,7 @@ button:focus {
 
 .feature {
     height: 104px;
-    width: 264px;
+    width: 254px;
     gap: 8px;
     display: flex;
     flex-direction: column;
