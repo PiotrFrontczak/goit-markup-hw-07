@@ -383,7 +383,6 @@ button:focus {
 
 .feature {
     height: 104px;
-    width: 254px;
     gap: 8px;
     display: flex;
     flex-direction: column;
