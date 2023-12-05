@@ -282,6 +282,7 @@ button:focus {
     text-transform: capitalize;
     color: var(--fourth-color-text);
     padding: 60px;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -346,6 +347,7 @@ button:focus {
     align-items: center;
     margin-top: 100px;
     padding-top: 160px;
+    padding-bottom: 120px;
 }
 
 .task-list {
