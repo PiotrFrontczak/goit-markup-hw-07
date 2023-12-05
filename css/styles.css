@@ -428,6 +428,7 @@ button:focus {
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .apps {
