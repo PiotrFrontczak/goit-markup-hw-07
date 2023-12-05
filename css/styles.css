@@ -288,7 +288,6 @@ button:focus {
 
 .second-section {
     display: flex;
-    padding-top: 20px;
     align-items: center;
     min-width: 1128px;
     height: 104px;
