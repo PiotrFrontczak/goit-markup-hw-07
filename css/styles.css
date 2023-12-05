@@ -49,6 +49,10 @@ body {
     min-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .container-header {
@@ -114,6 +118,13 @@ button:active,
 button:focus {
     color: var(--color-white);
     background-color: var(--focus-color);
+    border: 1px solid transparent;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--iris);
+    background-color: #E7E9FC;
     border: 1px solid transparent;
 }
 
@@ -293,6 +304,8 @@ button:focus {
     display: flex;
     max-width: 496px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .h-text {
