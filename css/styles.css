@@ -126,6 +126,7 @@ button:focus {
     margin: 0 auto;
     justify-content: center;
     gap: 24px;
+    align-items: center;
 }
 
 .menu-list {
