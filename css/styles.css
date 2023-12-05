@@ -232,6 +232,7 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--third-color-text);
     padding-top: 5px;
+    text-align: center;
 }
 
 .first-section {
@@ -270,6 +271,8 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--fourth-color-text);
     height: 24px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .h-text {
@@ -287,7 +290,7 @@ button:focus {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 36px;
+    gap: 24px;
     margin-top: 30px;
 }
 
@@ -310,6 +313,7 @@ button:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--fourth-color-text);
+    margin-bottom: 72px;
 }
 
 .team-member {
@@ -318,7 +322,6 @@ button:focus {
     display: flex;
     flex-direction: column;
     height: 380px;
-
 }
 
 .visually-hidden {
@@ -369,7 +372,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 32px 0;
 }
 
 .task-img {
