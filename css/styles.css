@@ -420,13 +420,14 @@ button:is(:hover, :active, :focus) {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .icon-items {
     display: block;
     margin: auto;
-    border-radius: 4px;
-    margin-bottom: 8px;
 }
 
 .social-item {
