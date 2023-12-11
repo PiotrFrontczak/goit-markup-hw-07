@@ -462,7 +462,7 @@ button:is(:hover, :active, :focus) {
 
 .customers-icons {
     margin: 16px 32px;
-    opacity: 0.5;
+    fill: currentColor;
 }
 
 .social-icon-link {
@@ -473,7 +473,6 @@ button:is(:hover, :active, :focus) {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .social-icon-link:is(:hover, :focus) {
