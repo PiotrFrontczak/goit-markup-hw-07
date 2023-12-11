@@ -456,13 +456,13 @@ button:is(:hover, :active, :focus) {
     display: flex;
     justify-content: center;
     gap: 24px;
+    width: calc((100% - 120px) / 6);
+    height: 88px;
 }
 
 .customers-icons {
     margin: 16px 32px;
     opacity: 0.5;
-    width: 104px;
-    height: 56px;
 }
 
 .social-icon-link {
