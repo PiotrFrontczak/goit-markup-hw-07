@@ -69,6 +69,16 @@ body {
     padding: 0 15px;
 }
 
+.container-footer {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
+
+}
+
 button {
     color: var(--iris);
     background-color: var(--fifth-color-text);
@@ -500,4 +510,13 @@ button:is(:hover, :active, :focus) {
 .clients-link:is(:hover, :focus) {
     border-color: #404bbf;
     color: #404bbf;
+}
+
+.footer-social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
 }
