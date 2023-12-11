@@ -450,7 +450,8 @@ button:is(:hover, :active, :focus) {
 .customers {
     display: flex;
     align-items: center;
-    padding: 120PX;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .customers-item {
@@ -483,4 +484,9 @@ button:is(:hover, :active, :focus) {
     background-color: #404bbf;
 }
 
-.social-item-icons {}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
