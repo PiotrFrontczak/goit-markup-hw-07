@@ -524,7 +524,6 @@ button:is(:hover, :active, :focus) {
 .footer {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
 }
 
 .footer-social-icons-link {
