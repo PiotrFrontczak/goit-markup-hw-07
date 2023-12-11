@@ -534,7 +534,7 @@ button:is(:hover, :active, :focus) {
     justify-content: center;
 }
 
-.footer-social-icons-link:is(:hover, focus) {
+.footer-social-icons-link:is(:hover, :focus) {
     background-color: #31d0aa;
 }
 
