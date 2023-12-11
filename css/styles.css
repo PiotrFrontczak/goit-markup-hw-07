@@ -73,10 +73,6 @@ body {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex;
-    align-items: baseline;
-    margin-right: 120px;
-
 }
 
 button {
@@ -248,7 +244,7 @@ button:is(:hover, :active, :focus) {
     justify-content: center;
 }
 
-.footer {
+.footer-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--fifth-color-text);
@@ -519,4 +515,10 @@ button:is(:hover, :active, :focus) {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
 }
