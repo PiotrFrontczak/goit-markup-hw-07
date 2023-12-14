@@ -112,18 +112,24 @@ button {
 
 a:is(:active, :hover, :focus) {
     color: var(--focus-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:is(:hover, :active, :focus) {
     color: var(--color-white);
     background-color: var(--focus-color);
     border: 1px solid transparent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:is(:hover, :focus) {
     color: var(--color-white);
     background-color: var(--focus-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -200,6 +206,47 @@ button:is(:hover, :active, :focus) {
 
 .app-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.apps {
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.app-items {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    text-align: left;
+}
+
+.apps {
+    width: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.apps:hover .overlay {
+    transform: translatey(0);
+}
+
+.apps:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -268,6 +315,17 @@ button:is(:hover, :active, :focus) {
     gap: 40px;
     display: flex;
     padding: 24px 0;
+    position: relative;
+}
+
+.index-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--focus-color);
 }
 
 .contact-link,
@@ -408,20 +466,7 @@ button:is(:hover, :active, :focus) {
     row-gap: 48px;
 }
 
-.app-items {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    text-align: left;
-}
 
-.apps {
-    width: 360px;
-}
-
-.apps:hover {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 
 .icons {
     background: #f4f4fd;
@@ -486,6 +531,8 @@ button:is(:hover, :active, :focus) {
 
 .social-icon-link:is(:hover, :focus) {
     background-color: #404bbf;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list {
@@ -509,6 +556,8 @@ button:is(:hover, :active, :focus) {
 .clients-link:is(:hover, :focus) {
     border-color: #404bbf;
     color: #404bbf;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -538,6 +587,8 @@ button:is(:hover, :active, :focus) {
 
 .footer-social-icons-link:is(:hover, :focus) {
     background-color: #31d0aa;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links {
