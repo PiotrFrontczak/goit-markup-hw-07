@@ -568,7 +568,7 @@ button:is(:hover, :active, :focus) {
     align-items: center;
     justify-content: center;
     color: #8e8f99;
-    transition-property: color, background-color;
+    transition-property: border-color, color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -646,6 +646,7 @@ button:is(:hover, :active, :focus) {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
@@ -663,6 +664,7 @@ button:is(:hover, :active, :focus) {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:is(:hover, :focus) {
@@ -674,3 +676,5 @@ button:is(:hover, :active, :focus) {
     visibility: hidden;
     pointer-events: none;
 }
+
+.x-button {}
