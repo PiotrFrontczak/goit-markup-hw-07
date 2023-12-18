@@ -244,7 +244,8 @@ button:is(:hover, :active, :focus) {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.app-link:is(:hover, :focus) .caption-content:is(:hover, :focus) {
+.app-link:hover .caption-content,
+.app-link:focus .caption-content {
     transform: translateY(0%);
 }
 
