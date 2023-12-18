@@ -86,8 +86,6 @@ button {
     letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-header {
@@ -101,6 +99,7 @@ button {
     margin: 50px auto 0;
     display: block;
     border: none;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -346,6 +345,7 @@ button:is(:hover, :active, :focus) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--third-color-text);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -548,6 +548,7 @@ button:is(:hover, :active, :focus) {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -567,6 +568,7 @@ button:is(:hover, :active, :focus) {
     align-items: center;
     justify-content: center;
     color: #8e8f99;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -608,8 +610,7 @@ button:is(:hover, :active, :focus) {
 
 .footer-social-icons-link:is(:hover, :focus) {
     background-color: #31d0aa;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-social-links {
@@ -642,7 +643,9 @@ button:is(:hover, :active, :focus) {
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
