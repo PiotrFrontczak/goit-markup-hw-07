@@ -44,6 +44,8 @@ body {
     align-items: center;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-default {
@@ -84,6 +86,8 @@ button {
     letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-header {
@@ -544,15 +548,12 @@ button:is(:hover, :active, :focus) {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.social-icon-link:is(:hover, :focus) {
-    background-color: #404bbf;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item-icons {
+.social-icon-link:is(:hover, :focus) {
+    background-color: #404bbf;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -600,6 +601,7 @@ button:is(:hover, :active, :focus) {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
