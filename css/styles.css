@@ -113,7 +113,7 @@ button {
     color: var(--iris);
     padding: 12px 24px;
     height: 56px;
-    box-shadow: 0px 4px 4px 0px #00000026;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: block;
     border: 1px solid #e7e9fc;
@@ -336,7 +336,7 @@ button:is(:hover, :active, :focus) {
 
 .link-active {
     position: relative;
-    color: #404bbf;
+    color: var(--focus-color);
     transition: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,7 +494,7 @@ button:is(:hover, :active, :focus) {
 }
 
 .icons {
-    background: #f4f4fd;
+    background: var(--fifth-color-text);
     padding-block: 24px;
     display: flex;
     align-items: center;
@@ -519,11 +519,11 @@ button:is(:hover, :active, :focus) {
 
 .social-icons {
     display: block;
-    fill: #f4f4fd;
+    fill: var(--fifth-color-text);
     margin: auto;
     width: 40px;
     height: 40px;
-    padding: 12px;
+    padding: 8px;
 }
 
 .customers {
@@ -554,7 +554,7 @@ button:is(:hover, :active, :focus) {
 .social-icon-link {
     width: 100%;
     height: 100%;
-    background-color: #4d5ae5;
+    background-color: var(--iris);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -565,7 +565,7 @@ button:is(:hover, :active, :focus) {
 }
 
 .social-icon-link:is(:hover, :focus) {
-    background-color: #404bbf;
+    background-color: var(--focus-color);
 }
 
 .clients-link {
@@ -583,8 +583,8 @@ button:is(:hover, :active, :focus) {
 }
 
 .clients-link:is(:hover, :focus) {
-    border-color: #404bbf;
-    color: #404bbf;
+    border-color: var(--focus-color);
+    color: var(--focus-color);
 }
 
 .footer-social {
@@ -592,7 +592,7 @@ button:is(:hover, :active, :focus) {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 16px;
 }
 
@@ -602,10 +602,10 @@ button:is(:hover, :active, :focus) {
 }
 
 .footer-social-icons-link {
-    fill: #f4f4fd;
+    fill: var(--fifth-color-text);
     width: 100%;
     height: 100%;
-    background-color: #4d5ae5;
+    background-color: var(--iris);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -665,7 +665,7 @@ button:is(:hover, :active, :focus) {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    fill: #2E2F42;
+    fill: var(--fourth-color-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,7 +675,7 @@ button:is(:hover, :active, :focus) {
 
 .close-btn:is(:hover, :focus) {
     border: none;
-    fill: #ffffff;
+    fill: var(--color-white);
 }
 
 .is-hidden {
