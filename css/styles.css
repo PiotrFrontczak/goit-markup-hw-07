@@ -733,4 +733,70 @@ button:is(:hover, :active, :focus) {
     height: 40px;
 }
 
-.send-icon {}
+.send-icon {
+    margin-left: 16px;
+    margin-right: 24px;
+}
+
+.modal-header {
+    color: var(--fourth-color-text);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-header {
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+input, textarea {
+    width: 100%;
+
+}
+
+.modal-form {
+    margin: 0 24px 0 24px;
+    color: #8E8F99;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+input[type='checkbox'] {
+    float: left;
+    display: block;
+    width: 20px;
+}
+
+label>a {
+    text-align: center;
+}
+
+::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    padding: 8px 0 0 16px;
+}
