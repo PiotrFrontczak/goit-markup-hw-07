@@ -653,9 +653,6 @@ button:is(:hover, :active, :focus) {
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
@@ -793,7 +790,6 @@ button:is(:hover, :active, :focus) {
     height: 40px;
     display: flex;
     flex-shrink: 0;
-
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
@@ -828,19 +824,7 @@ label {
     display: block;
 }
 
-textarea {
-    resize: none;
-}
-
-input, textarea {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
-    margin-bottom: 8px;
-}
-
 .modal-form {
-    margin: 0 24px 0 24px;
     color: #8E8F99;
     font-family: Roboto;
     font-size: 12px;
@@ -864,11 +848,11 @@ input[type='checkbox'] {
     width: 20px;
 }
 
-.input:focus-within {
-    fill: #4D5AE5;
+.input-textarea:is(:hover, :focus) {
+    border-color: var(--iris);
 }
 
-label>a {
+lael>a {
     text-align: center;
 }
 
