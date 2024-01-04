@@ -701,6 +701,11 @@ button:is(:hover, :active, :focus) {
     font-weight: 500;
     letter-spacing: 0.64px;
     padding: 8px 0px 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-svg {
