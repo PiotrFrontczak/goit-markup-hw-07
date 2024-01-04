@@ -772,7 +772,10 @@ button:is(:hover, :active, :focus) {
     color: var(--color-white);
 }
 
-.form {}
+.form {
+    display: flex;
+
+}
 
 .email {
     color: var(--color-white);
@@ -785,7 +788,12 @@ button:is(:hover, :active, :focus) {
     height: 40px;
     display: flex;
     flex-shrink: 0;
-
+    gap: 24px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
 }
 
 .send-icon {
