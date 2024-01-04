@@ -657,6 +657,7 @@ button:is(:hover, :active, :focus) {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .close-btn {
@@ -814,6 +815,8 @@ button:is(:hover, :active, :focus) {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    margin-top: 72px;
+    margin-bottom: 16px;
 }
 
 label {
@@ -823,11 +826,6 @@ label {
 
 textarea {
     resize: none;
-}
-
-.modal-header {
-    margin-top: 72px;
-    margin-bottom: 16px;
 }
 
 input, textarea {
