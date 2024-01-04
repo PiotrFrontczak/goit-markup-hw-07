@@ -854,6 +854,10 @@ input, textarea {
     margin-bottom: 8px;
 }
 
+.form-element-comment {
+    margin-bottom: 16px;
+}
+
 input[type='checkbox'] {
     float: left;
     display: block;
