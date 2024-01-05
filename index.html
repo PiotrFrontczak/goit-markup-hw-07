@@ -456,13 +456,22 @@
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="form-user-privacy">
-                    <input id="user-privacy" type="checkbox" value="true" name="user-policy" class="user-privacy" />
-                    <label>I accept the terms and conditions of the<a href="">Privacy Policy</a></label>
+                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy"
+                        class="user-privacy visually-hidden" />
+                    <label class="">
+                        <span class="privacy-policy-span">
+                            <svg class="policy-svg" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checked"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a href="" class="privacy-policy-link">Privacy Policy</a>
+                    </label>
                 </div>
+                <button type="button" class="form-btn">Send</button>
             </form>
         </div>
 
-        <button type="button" class="form-btn">Send</button>
     </div>
     <script src="./js/modal.js"></script>
 </body>
