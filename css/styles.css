@@ -749,7 +749,6 @@ button:is(:hover, :active, :focus) {
     min-width: 169px;
     box-shadow: 0px 4px 4px 0px #00000026;
     border-radius: 4px;
-    margin: 50px auto 0;
     display: block;
     border: none;
     transition-property: background-color;
@@ -768,7 +767,7 @@ button:is(:hover, :active, :focus) {
     letter-spacing: 0.48px;
 }
 
-::placeholder {
+.email::placeholder {
     color: var(--color-white);
 }
 
@@ -839,18 +838,8 @@ label {
     margin-bottom: 16px;
 }
 
-input[type='checkbox'] {
-    float: left;
-    display: block;
-    width: 20px;
-}
-
 .input-textarea:is(:hover, :focus) {
     border-color: var(--iris);
-}
-
-lael>a {
-    text-align: center;
 }
 
 .input-textarea {
@@ -859,7 +848,6 @@ lael>a {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
