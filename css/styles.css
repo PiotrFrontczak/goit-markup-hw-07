@@ -771,6 +771,10 @@ button:is(:hover, :active, :focus) {
     color: var(--color-white);
 }
 
+.input-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
 .form {
     display: flex;
     gap: 24px;
@@ -881,4 +885,10 @@ label {
 
 .privacy-policy-link {
     color: var(--iris);
+}
+
+.user-privacy:checked+.privacy-policy-label .privacy-policy.span {
+    border: none;
+    background: var(--focus-color);
+    fill: var(--fifth-color-text);
 }
