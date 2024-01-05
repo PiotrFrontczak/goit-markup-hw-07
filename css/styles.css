@@ -887,7 +887,7 @@ label {
     color: var(--iris);
 }
 
-.user-privacy:checked+.privacy-policy-label .privacy-policy.span {
+.user-privacy:checked+.privacy-policy-label .privacy-policy-span {
     border: none;
     background: var(--focus-color);
     fill: var(--fifth-color-text);
