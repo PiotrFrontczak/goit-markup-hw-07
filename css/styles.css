@@ -129,13 +129,13 @@ a:is(:active, :hover, :focus) {
 button:is(:hover, :active, :focus) {
     color: var(--color-white);
     background-color: var(--focus-color);
-    border: 1px solid transparent;
 }
 
 .portfolio-button:is(:hover, :focus) {
     color: var(--color-white);
     background-color: var(--focus-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
 }
 
 .logo {
@@ -523,7 +523,7 @@ button:is(:hover, :active, :focus) {
     margin: auto;
     width: 40px;
     height: 40px;
-    padding: 8px;
+    padding: 12px;
 }
 
 .customers {
@@ -724,7 +724,8 @@ button:is(:hover, :active, :focus) {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    font-size: 18px;
+    color: var(--fourth-color-text);
 }
 
 .form-input:is(:hover, :focus) {
@@ -881,6 +882,7 @@ label {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 4px;
 }
 
 .privacy-policy-link {
