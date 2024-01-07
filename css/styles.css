@@ -286,6 +286,7 @@ button:is(:hover, :active, :focus) {
 .header-list {
     font-weight: 500;
     font-size: 20px;
+    font-family: Roboto;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--fourth-color-text);
@@ -603,6 +604,7 @@ button:is(:hover, :active, :focus) {
 .footer-social, .label-form {
     font-weight: 500;
     font-size: 16px;
+    font-family: Roboto;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-white);
@@ -658,6 +660,7 @@ button:is(:hover, :active, :focus) {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
+    font-family: Roboto;
     min-height: 584px;
     border-radius: 4px;
     background: #FCFCFC;
@@ -705,6 +708,7 @@ button:is(:hover, :active, :focus) {
     text-align: center;
     font-size: 16px;
     font-style: normal;
+    font-family: Roboto;
     font-weight: 500;
     letter-spacing: 0.64px;
     padding: 8px 0px 8px 24px;
@@ -765,6 +769,7 @@ button:is(:hover, :active, :focus) {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: Roboto;
 }
 
 .label-form {
@@ -882,6 +887,7 @@ label {
 .privacy-policy-label {
     display: block;
     line-height: 1.17;
+    font-family: Roboto;
 }
 
 .privacy-policy-span {
@@ -895,10 +901,12 @@ label {
     justify-content: center;
     fill: transparent;
     margin-right: 4px;
+    font-family: Roboto;
 }
 
 .privacy-policy-link {
     color: var(--iris);
+    font-family: Roboto;
 }
 
 .user-privacy:checked+.privacy-policy-label .privacy-policy-span {
