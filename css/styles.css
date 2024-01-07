@@ -564,6 +564,7 @@ button:is(:hover, :active, :focus) {
 .social-icon-link {
     width: 100%;
     height: 100%;
+    font-family: Roboto;
     background-color: var(--iris);
     border-radius: 50%;
     display: flex;
@@ -588,6 +589,7 @@ button:is(:hover, :active, :focus) {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: flex;
+    font-family: Roboto;
     align-items: center;
     justify-content: center;
     color: #8e8f99;
@@ -620,6 +622,7 @@ button:is(:hover, :active, :focus) {
     fill: var(--fifth-color-text);
     width: 100%;
     height: 100%;
+    font-family: Roboto;
     background-color: var(--iris);
     border-radius: 50%;
     display: flex;
@@ -679,6 +682,7 @@ button:is(:hover, :active, :focus) {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    font-family: Roboto;
     fill: var(--fourth-color-text);
     display: flex;
     justify-content: center;
@@ -839,6 +843,7 @@ label {
 .modal-label {
     line-height: 1.17;
     display: block;
+    font-family: Roboto;
 }
 
 .modal-form {
