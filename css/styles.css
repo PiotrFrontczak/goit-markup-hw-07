@@ -713,7 +713,6 @@ button:is(:hover, :active, :focus) {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Roboto;
 }
 
 .input-svg {
