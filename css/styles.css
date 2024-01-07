@@ -526,6 +526,15 @@ button:is(:hover, :active, :focus) {
     padding: 12px;
 }
 
+.social-icons-footer {
+    display: block;
+    fill: var(--fifth-color-text);
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
 .customers {
     padding-top: 120px;
     padding-bottom: 120px;
