@@ -738,7 +738,7 @@ button:is(:hover, :active, :focus) {
     font-family: Roboto;
 }
 
-.form-input:is(:hover, :focus) {
+.form-input:is(:focus) {
     border-color: var(--iris);
 }
 
@@ -854,7 +854,7 @@ label {
     margin-bottom: 16px;
 }
 
-.input-textarea:is(:hover, :focus) {
+.input-textarea:is(:focus) {
     border-color: var(--iris);
 }
 
