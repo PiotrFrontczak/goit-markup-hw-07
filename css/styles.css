@@ -708,7 +708,7 @@ button:is(:hover, :active, :focus) {
     text-align: center;
     font-size: 16px;
     font-style: normal;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     letter-spacing: 0.64px;
     padding: 8px 0px 8px 24px;
@@ -887,7 +887,7 @@ label {
 .privacy-policy-label {
     display: block;
     line-height: 1.17;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 .privacy-policy-span {
