@@ -1,1 +1,1 @@
-https://piotrfrontczak.github.io/goit-markup-hw-06/
+https://piotrfrontczak.github.io/goit-markup-hw-07/
