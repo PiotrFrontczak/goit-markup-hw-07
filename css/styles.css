@@ -919,3 +919,25 @@ label {
     background: var(--focus-color);
     fill: var(--fifth-color-text);
 }
+
+body {
+    min-width: 320px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        /* Style smartphone */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    body {
+        /* Style tabletu */
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    body {
+        /* Style pulpitowe */
+    }
+}
