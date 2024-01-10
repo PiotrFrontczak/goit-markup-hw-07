@@ -975,9 +975,11 @@ body {
     }
 
     .container {
-        width: 1158px;
-        margin: 0 auto;
-        padding: 0 15px;
+        max-width: 767px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .container-footer {
@@ -1829,6 +1831,7 @@ body {
     }
 
 }
+
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {}
