@@ -26,6 +26,19 @@
                     <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
                     <li><a href="" class="link index-link">Contacts</a></li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                        <g clip-path="url(#clip0_297053_2156)">
+                            <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                                stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297053_2156">
+                                <rect width="32" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
             </nav>
             <address class="address">
                 <ul class="address-list">
@@ -37,23 +50,32 @@
             </address>
         </div>
         <div class="js-menu-container">
-            <nav class="nav-list">
-                <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span></a>
-                <ul class="menu-list">
-                    <li><a href="./index.html" class="link index-link link-active">Studio</a></li>
-                    <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
-                    <li><a href="" class="link index-link">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-list"><a href="mailto:info@devstudio.com"
-                            class="link contact-link">info@devstudio.com</a>
-                    </li>
-                    <li class="address-list"><a href="tel:+110001111111" class="link contact-link">+11 (000)
-                            111-11-11</a></li>
-                </ul>
-            </address>
+            <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span></a>
+            <button class="js-close-menu">
+                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="mobile-menu-container">
+                <nav class="nav-list">
+                    <ul class="menu-list">
+                        <li><a href="./index.html" class="link index-link link-active">Studio</a></li>
+                        <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
+                        <li><a href="" class="link index-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list"><a href="mailto:info@devstudio.com"
+                                class="link contact-link">info@devstudio.com</a>
+                        </li>
+                        <li class="address-list"><a href="tel:+110001111111" class="link contact-link">+11 (000)
+                                111-11-11</a></li>
+                    </ul>
+                </address>
+            </div>
         </div>
     </header>
     <main>
