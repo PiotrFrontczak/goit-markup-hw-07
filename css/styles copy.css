@@ -948,6 +948,28 @@ body {
         display: block;
     }
 
+    .menu-mobile {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: var(--color-white);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+    }
+
+    .menu-mobile .button-container {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        padding-top: 24px;
+        padding-right: 24px;
+    }
+
+    .js-close-menu {
+        background-color: var(--color-white);
+    }
+
     img {
         display: block;
         max-width: 100%;
