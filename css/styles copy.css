@@ -377,6 +377,7 @@ button:is(:hover, :active, :focus) {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -930,8 +931,13 @@ body {
     min-width: 320px;
 }
 
-.js-menu-container {
-    display: none;
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office\ 1@2x.jpg");
+    }
 }
 
 
@@ -945,6 +951,14 @@ body {
 
     .js-menu-container.is-open {
         display: block;
+    }
+
+    .js-menu-container {
+        display: none;
+    }
+
+    .js-open-menu {
+        display: flex;
     }
 
     .menu-mobile.is-open {
@@ -1027,126 +1041,189 @@ body {
         align-items: center;
     }
 
+    .subscribe {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1158px;
+    }
+
+    .list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+    }
+
+    .menu-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .address {
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .address-list {
+        list-style: none;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        gap: 40px;
+        padding-left: 40px;
+        align-items: flex-start;
+        transition: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-list {
+        font-weight: 700;
+        font-size: 36px;
+        font-family: Roboto;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: var(--fourth-color-text);
+        text-align: center;
+        margin: 20px;
+    }
+
+    .second-section {
+        padding: 96px 0;
+
+    }
+
+    .tasks {
+        padding-bottom: 120px;
+        display: none;
+    }
+
+    .feature {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons {
+        background: var(--fifth-color-text);
+        padding-block: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        display: none;
+    }
+
+    .customers-item {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        width: 163px;
+        height: 88px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
 
-.subscribe {
-    display: none;
-}
 
-.container {
-    width: 100%;
-    max-width: 767px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+/* ============== TABLET 👇 ======================== */
+@media (min-width: 768px) {
 
-.list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
-}
+    .container-header>.nav-list .menu-list,
+    .container-header .address {
+        display: flex;
+        justify-content: center;
+    }
 
-.menu-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    gap: 40px;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.address {
-    font-style: normal;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-}
-
-.address-list {
-    list-style: none;
-    display: flex;
-    flex-flow: column-reverse nowrap;
-    gap: 40px;
-    padding-left: 40px;
-    align-items: flex-start;
-    transition: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list {
-    font-weight: 700;
-    font-size: 36px;
-    font-family: Roboto;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    color: var(--fourth-color-text);
-    text-align: center;
-    margin: 20px;
-}
-
-.second-section {
-    padding: 96px 0;
-
-}
-
-.tasks {
-    padding-bottom: 120px;
-    display: none;
-}
-
-.feature {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.icons {
-    background: var(--fifth-color-text);
-    padding-block: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    display: none;
-}
-
-.customers-item {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    width: 163px;
-    height: 88px;
-}
-
-.customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 72px;
-}
-
-
-/* ================================================= TABLET 👇 ========================================= */
-@media (min-width: 768px) {}
-
-
-/* ================================================= DESKTOP 👇 ========================================= */
-@media (min-width: 1158px) {
     .js-open-menu {
         display: none;
     }
+
+    .feature {
+        flex-basis: calc((100% - 72px) /2);
+    }
+
+    .header-list {
+        text-align: left;
+        margin-left: 0;
+    }
+
+}
+
+/* ================== DESKTOP 👇 ===================== */
+@media (min-width: 1158px) {
+    .address-list {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+
+    }
+
+    .link.contact-link {
+        display: flex;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .list {
+        flex-flow: nowrap;
+    }
+
+    .team-list {
+        flex-flow: row nowrap;
+    }
+
+    .header-list {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    .subscribe {
+        display: block;
+    }
+
+    .nav-list {
+        justify-content: start;
+    }
+
+    .address {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .container {
+        width: 1158px;
+    }
+
 }
