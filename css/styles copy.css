@@ -73,6 +73,8 @@ body {
 }
 
 .container {
+    width: 100%;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -413,7 +415,6 @@ button:is(:hover, :active, :focus) {
 
 .team-list {
     height: 380px;
-    min-width: 1128px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -445,7 +446,7 @@ button:is(:hover, :active, :focus) {
     background-color: var(--color-white);
     border-radius: 0px 0px 4px 4px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 428px;
     text-align: center;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -549,9 +550,7 @@ button:is(:hover, :active, :focus) {
 }
 
 .customers-item {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+    flex-basis: calc((100% - 120px) / 2);
     width: calc((100% - 120px) / 6);
     height: 88px;
 }
@@ -563,8 +562,8 @@ button:is(:hover, :active, :focus) {
 
 .customers-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -1045,11 +1044,6 @@ body {
         display: none;
     }
 
-    .container {
-        width: 100%;
-        max-width: 1158px;
-    }
-
     .list {
         list-style: none;
         display: flex;
@@ -1133,20 +1127,17 @@ body {
         display: none;
     }
 
-    .customers-item {
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-        width: 163px;
-        height: 88px;
+    .team-member {
+        flex-basis: 100%;
+        max-width: 264px;
     }
 
-    .customers-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
+    .header-list {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        margin-top: 8px;
     }
 
 }
@@ -1174,6 +1165,27 @@ body {
         margin-left: 0;
     }
 
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        flex-basis: calc(50% - 24px);
+    }
+
+    .customers-list {
+        justify-content: center;
+        list-style: none;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 120px) / 3);
+        width: calc((100% - 120px) / 6);
+        height: 88px;
+    }
+
 }
 
 /* ================== DESKTOP 👇 ===================== */
@@ -1198,15 +1210,7 @@ body {
     }
 
     .team-list {
-        flex-flow: row nowrap;
-    }
-
-    .header-list {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 8px;
-        margin-top: 8px;
+        flex-flow: nowrap;
     }
 
     .subscribe {
@@ -1224,6 +1228,14 @@ body {
 
     .container {
         width: 1158px;
+    }
+
+    .tasks {
+        display: block;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
     }
 
 }
