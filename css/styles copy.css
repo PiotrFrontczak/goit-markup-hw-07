@@ -79,10 +79,6 @@ body {
     padding: 0 15px;
 }
 
-.container-footer {
-    margin-right: 120px;
-}
-
 button {
     color: var(--iris);
     background-color: var(--fifth-color-text);
@@ -277,7 +273,8 @@ button:is(:hover, :active, :focus) {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 16px;
-
+    text-align: center;
+    width: 100%;
 }
 
 .section-button {
@@ -565,6 +562,7 @@ button:is(:hover, :active, :focus) {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 24px;
+    list-style: none;
 }
 
 .social-icon-link {
@@ -617,11 +615,14 @@ button:is(:hover, :active, :focus) {
     letter-spacing: 0.02em;
     color: var(--color-white);
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-social-icons-link {
@@ -801,9 +802,25 @@ button:is(:hover, :active, :focus) {
     color: rgba(46, 47, 66, 0.4);
 }
 
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
 .form {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form .subscribe-email {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.form .subscribe-email .email {
+    width: 100%;
 }
 
 .email {
@@ -1040,10 +1057,6 @@ body {
         align-items: center;
     }
 
-    .subscribe {
-        display: none;
-    }
-
     .list {
         list-style: none;
         display: flex;
@@ -1177,13 +1190,16 @@ body {
 
     .customers-list {
         justify-content: center;
-        list-style: none;
     }
 
     .customers-item {
         flex-basis: calc((100% - 120px) / 3);
         width: calc((100% - 120px) / 6);
         height: 88px;
+    }
+
+    .footer-link {
+        text-align: left;
     }
 
 }
@@ -1213,10 +1229,6 @@ body {
         flex-flow: nowrap;
     }
 
-    .subscribe {
-        display: block;
-    }
-
     .nav-list {
         justify-content: start;
     }
@@ -1235,6 +1247,22 @@ body {
     }
 
     .customers-list {
+        flex-wrap: nowrap;
+    }
+
+    .subscribe {
+        display: block;
+    }
+
+    .container-footer {
+        margin-right: 120px;
+    }
+
+    .footer-social {
+        text-align: left;
+    }
+
+    .footer {
         flex-wrap: nowrap;
     }
 
