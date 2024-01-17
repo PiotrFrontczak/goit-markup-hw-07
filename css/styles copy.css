@@ -783,10 +783,6 @@ button:is(:hover, :active, :focus) {
     font-family: Roboto, sans-serif;
 }
 
-.label-form {
-    display: inline-flex;
-}
-
 :placeholder-shown {
     font-family: Roboto, sans-serif;
     font-size: 12px;
@@ -809,6 +805,7 @@ button:is(:hover, :active, :focus) {
 
 .form {
     display: flex;
+    flex-flow: column;
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
@@ -1264,6 +1261,10 @@ body {
 
     .footer {
         flex-wrap: nowrap;
+    }
+
+    .form {
+        flex-flow: row;
     }
 
 }
