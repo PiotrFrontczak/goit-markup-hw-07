@@ -175,10 +175,11 @@ button:is(:hover, :active, :focus) {
 }
 
 .portfolio-menu-list {
+    flex-wrap: wrap;
     list-style: none;
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
     margin-bottom: 72px;
 }
@@ -985,6 +986,10 @@ body {
     flex-grow: 1;
 }
 
+.portfolio-header-list {
+    font-size: 20px;
+}
+
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -997,10 +1002,6 @@ body {
 
 .header-section {
     font-size: 36px;
-}
-
-.js-menu-container.is-open {
-    display: block;
 }
 
 .js-menu-container {
@@ -1257,6 +1258,13 @@ body {
         gap: 24px;
     }
 
+    .apps {
+        margin: 0;
+        font-size: 18px;
+        width: 360px;
+        flex-basis: calc(50% - 24px);
+    }
+
 
 }
 
@@ -1334,7 +1342,14 @@ body {
         height: 24px;
         margin-bottom: 8px;
         margin-top: 8px;
+    }
 
+    .portfolio-menu-list {
+        justify-content: center;
+    }
+
+    .apps {
+        flex-basis: calc(30% - 24px);
     }
 
 }

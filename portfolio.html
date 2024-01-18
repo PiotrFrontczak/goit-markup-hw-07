@@ -19,13 +19,25 @@
     <header class="header">
         <div class="container-header container">
             <nav class="nav-list">
-                <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span>
-                </a>
+                <a href="./index.html" class="logo link">Web<span class="studio-header">Studio</span></a>
                 <ul class="menu-list">
-                    <li><a href="./index.html" class="link index-link">Studio</a></li>
-                    <li><a href="./portfolio.html" class="link index-link link-active">Portfolio</a></li>
+                    <li><a href="./index.html" class="link index-link link-active">Studio</a></li>
+                    <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
                     <li><a href="" class="link index-link">Contacts</a></li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                        <g clip-path="url(#clip0_297053_2156)">
+                            <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                                stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297053_2156">
+                                <rect width="32" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
             </nav>
             <address class="address">
                 <ul class="address-list">
@@ -36,7 +48,72 @@
                 </ul>
             </address>
         </div>
+
     </header>
+    <div class="menu-mobile js-menu-container">
+        <div class="button-container">
+            <button class="js-close-menu">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-container">
+            <nav class="nav-list">
+                <ul class="menu-list">
+                    <li><a href="./index.html" class="link index-link link-active">Studio</a></li>
+                    <li><a href="./portfolio.html" class="link index-link">Portfolio</a></li>
+                    <li><a href="" class="link index-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address">
+                <ul class="address-list">
+                    <li><a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a>
+                    </li>
+                    <li><a href="tel:+110001111111" class="link contact-link">+11 (000)
+                            111-11-11</a></li>
+                </ul>
+                <div class="menu-mobile-social">
+                    <ul class="menu-mobile-social-links">
+                        <li class="footer-social-icons">
+                            <a href="" class="footer-social-icons-link">
+                                <svg class="social-icons-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-icons">
+                            <a href="" class="footer-social-icons-link">
+                                <svg class="social-icons-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-icons">
+                            <a href="" class="footer-social-icons-link">
+                                <svg class="social-icons-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-icons">
+                            <a href="" class="footer-social-icons-link">
+                                <svg class="social-icons-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </address>
+
+        </div>
+    </div>
     <main>
         <section class="section-button">
             <div class="container">
@@ -63,7 +140,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Banking App Interface Concept</h2>
+                                <h2 class="header-list portfolio-header-list">Banking App Interface Concept</h2>
                                 <p class="text-list">App</p>
                             </div>
                         </a>
@@ -82,7 +159,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Cashless Payment</h2>
+                                <h2 class="header-list portfolio-header-list">Cashless Payment</h2>
                                 <p class="text-list">Marketing</p>
                             </div>
                         </a>
@@ -101,7 +178,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Meditation App</h2>
+                                <h2 class="header-list portfolio-header-list">Meditation App</h2>
                                 <p class="text-list">App</p>
                             </div>
                         </a>
@@ -120,8 +197,8 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Taxi Service</h2>
-                                <p class="text-list">Marketing</p>
+                                <h2 class="header-list portfolio-header-list"">Taxi Service</h2>
+                                <p class=" text-list">Marketing</p>
                             </div>
                         </a>
                     </li>
@@ -139,7 +216,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Screen Illustrations</h2>
+                                <h2 class="header-list portfolio-header-list">Screen Illustrations</h2>
                                 <p class="text-list">Design</p>
                             </div>
                         </a>
@@ -158,7 +235,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Online Courses</h2>
+                                <h2 class="header-list portfolio-header-list">Online Courses</h2>
                                 <p class="text-list">Marketing</p>
                             </div>
                         </a>
@@ -177,7 +254,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Instagram Stories Concept</h2>
+                                <h2 class="header-list portfolio-header-list">Instagram Stories Concept</h2>
                                 <p class="text-list">Design</p>
                             </div>
                         </a>
@@ -196,7 +273,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Organic Food</h2>
+                                <h2 class="header-list portfolio-header-list">Organic Food</h2>
                                 <p class="text-list">Web Site</p>
                             </div>
                         </a>
@@ -215,7 +292,7 @@
                                 </p>
                             </div>
                             <div class="app-items">
-                                <h2 class="header-list">Fresh Coffee</h2>
+                                <h2 class="header-list portfolio-header-list">Fresh Coffee</h2>
                                 <p class="text-list">Web Site</p>
                             </div>
                         </a>
@@ -291,6 +368,11 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
