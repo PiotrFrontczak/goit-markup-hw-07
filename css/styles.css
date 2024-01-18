@@ -551,7 +551,7 @@ button:is(:hover, :active, :focus) {
 }
 
 .customers-icons {
-    margin: 16px 32px;
+    margin: 6px 6px;
     fill: currentColor;
 }
 
@@ -620,9 +620,9 @@ button:is(:hover, :active, :focus) {
 
 .footer {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     flex-wrap: wrap;
-
     gap: 72px;
 }
 
@@ -829,7 +829,7 @@ button:is(:hover, :active, :focus) {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 0px 8px 16px;
     max-width: 398px;
-    width: 100%;
+    min-width: 100%;
     height: 40px;
     display: flex;
     flex-shrink: 0;
@@ -1164,6 +1164,10 @@ label {
     .container {
         max-width: 480px;
     }
+
+    .email {
+        min-width: 280px;
+    }
 }
 
 /* ============== TABLET 👇 ======================== */
@@ -1253,6 +1257,7 @@ label {
     }
 
     .footer {
+        flex-direction: row;
         gap: 72px;
     }
 
@@ -1265,6 +1270,11 @@ label {
 
     .subscribe {
         margin: 0;
+    }
+
+    .customers-icons {
+        margin: 16px 32px;
+        fill: currentColor;
     }
 
 
@@ -1348,6 +1358,10 @@ label {
 
     .apps {
         flex-basis: calc(30% - 24px);
+    }
+
+    .first-section {
+        padding: 188px 0;
     }
 
 }
