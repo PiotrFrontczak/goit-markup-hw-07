@@ -25,7 +25,7 @@ img {
 }
 
 html, body {
-    width: 100vw;
+    width: 100%;
     min-width: 100%;
     overflow-x: hidden;
 }
@@ -802,6 +802,7 @@ button:is(:hover, :active, :focus) {
 .subscribe {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .form {
@@ -827,7 +828,8 @@ button:is(:hover, :active, :focus) {
     border: 1px solid var(--color-white);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 0px 8px 16px;
-    width: 398px;
+    max-width: 398px;
+    width: 100%;
     height: 40px;
     display: flex;
     flex-shrink: 0;
@@ -941,10 +943,6 @@ label {
     fill: var(--fifth-color-text);
 }
 
-body {
-    min-width: 320px;
-}
-
 .header-second-section {
     font-size: 36px;
     font-weight: 700;
@@ -1051,10 +1049,11 @@ body {
 }
 
 .menu-mobile-social-links {
+    max-width: 328px;
     display: flex;
     list-style: none;
-    gap: 56px;
     padding-left: 40px;
+    justify-content: space-between;
 }
 
 .menu-mobile-social {
@@ -1227,7 +1226,6 @@ body {
 
     .container {
         max-width: 768px;
-
     }
 
     .form {
@@ -1255,7 +1253,7 @@ body {
     }
 
     .footer {
-        gap: 24px;
+        gap: 72px;
     }
 
     .apps {
@@ -1263,6 +1261,10 @@ body {
         font-size: 18px;
         width: 360px;
         flex-basis: calc(50% - 24px);
+    }
+
+    .subscribe {
+        margin: 0;
     }
 
 
@@ -1318,10 +1320,6 @@ body {
 
     .subscribe {
         display: block;
-    }
-
-    .container-footer {
-        margin-right: 120px;
     }
 
     .footer-social {
